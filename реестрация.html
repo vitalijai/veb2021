@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>Всем Дом</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="реестрация.css" />
+</head>
+ 
+<body>
+<header>
+  <a class="nav_linq" href="/home_page.html">
+   <div id = "logo"> Всем Дом </div> </a>
+    <nav class = "nav">
+      <a class="nav_linq" href="реестрация.html">Зарегистрировать свой обьект</a>
+      <a class="nav_linq" href="/вход.html">Вход</a>
+      <a class="nav_linq" href="реестрация_акаунта.html">Регистрация</a>
+      <a class="nav_linq" href="статистика.html">Цены на недвижимость</a>
+    </nav>
+</header>
+
+  <main>
+    <form action="/home_page.html">
+      <div class="form-grup">
+        <h2>Заполните все поля для реестрации обьекта</h2>
+        <label for="region">Область</label>
+        <input list="region-list" name="region" />
+        <datalist id="region-list">
+          <option value=""></option>
+        </datalist>
+        <label>Город</label>
+        <input list="city-list" name="city" />
+        <datalist id="city-list">
+          <option value=""></option>
+        </datalist>
+        <label >Улица</label>
+        <input type="text" id="street">
+        <label for="house_number">№ дома</label>
+        <input name="number">
+        <label >Количество комнат</label>
+        <input type="text" id="number_of_rooms">
+        <label >Площадь(м2)</label>
+        <input type="text" id="area">
+        <label >Цена</label>
+        <input type="text" id="price">
+        <label >Описание обьекта</label>
+        <textarea name="specification" id="" cols="30" rows="10"></textarea>
+        <label >Фото</label>
+        <input type="file" accept="image/jpeg,image/png" id="image">
+        <button type="submit">Отправить данные</button>
+
+      </div>
+    </form>
+   
+  </main>
+
+  <footer>
+    <div>
+      © 2021 Всем Дом
+    </div>
+    
+    <a class="nav_linq" href="https://t.me/Z_L_O_J">Обратная связь</a>
+  </footer>
+		 
+</body>
+</html>

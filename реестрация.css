@@ -1,0 +1,52 @@
+main
+  { 
+     margin: 0;
+  
+     width: 100%;
+     height: 100%;
+     background-image: url(/image/residence-gf6e97047e_1920.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     justify-content: center;
+     font-family: Helvetica,Arial, sans-serif;
+  }
+ .form-grup{
+     width: 45%;
+     height: 85%;
+     background: #10375C;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+     margin: 10;
+     padding-left: 20px;
+
+  }
+  input{
+      width: 35%;
+  }
+  button{
+    width: 1%;
+    height: 11%;
+    background-color: #FF5722;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    padding: 2% 12%;
+    text-decoration: none;
+    margin: 5px 60%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  textarea{
+      width: 90%;
+      min-height: 20px;
+  }
+  label{
+      margin: 0 0;
+  }
+ 
