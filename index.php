@@ -5,7 +5,7 @@
             <title>Всем Дом</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/home_page.css">
-<link rel="icon" href="vsem_dom2.ico" type="image/x-icon">
+<link rel="icon" href="vsem_dom.ico" type="image/x-icon">
 </head>
  
 <body>

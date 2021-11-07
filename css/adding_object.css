@@ -1,7 +1,7 @@
 main
   { 
      margin: 0;
-  padding: 50px 27.5%;
+    
      width: 100%;
      height: 100%;
      background-image: url(/veb2021/image/residence-gf6e97047e_1920.jpg);
@@ -10,6 +10,7 @@ main
      background-size: cover;
      justify-content: center;
      font-family: Helvetica,Arial, sans-serif;
+     padding: 50px 0;
   }
  .form-grup{
      width: 45%;
@@ -19,8 +20,8 @@ main
      display: flex;
      flex-direction: column;
      border-radius: 5px;
-
      padding-left: 20px;
+     margin-left: 100px;
 
   }
   input{

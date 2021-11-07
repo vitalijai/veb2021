@@ -10,9 +10,9 @@ main
      background-size: cover;
      justify-content: center;
      font-family: Helvetica,Arial, sans-serif;
-     padding:  100px 27.5%;
+    padding: 50px 0;
   }
- .registration_form{
+ #registration_form{
      width: 45%;
      height: 1200xp;
      background: #10375C;
@@ -21,11 +21,16 @@ main
      flex-direction: column;
      border-radius: 5px;
      padding-left: 20px;
+     margin-left: 100px;
 
   }
   input{
       width: 35%;
       margin-bottom: 10px;
+  }
+  input::placeholder
+  {
+    color: red;
   }
   button{
     width: 1%;

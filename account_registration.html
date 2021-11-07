@@ -22,7 +22,7 @@
 
   <main>
     <form id="form">
-      <div class="registration_form">
+      <div id="registration_form">
         <h2>Заполните все поля для регистрации аккаунта</h2>
         <label >Фамилия</label>
         <input type="text" name="surname">
@@ -32,8 +32,9 @@
         <input type="text" name="patronymic">
         <label >Номер телефона</label>
         <input type="text" name="telefon">
+        <span class="error" aria-live="polite"></span>
         <label >Електронная почта</label>
-        <input type="email" name="mail" id="mail">
+        <input type="email" name="mail">
         <span class="error" aria-live="polite"></span>
         <label >Пароль</label>
         <input type="text" name="password">
@@ -53,6 +54,6 @@
     
     <a class="nav_linq" href="https://t.me/Z_L_O_J">Обратная связь</a>
   </footer>
-  <script src="/validate_email.js"></script>  
+  <script src="js/validate.js"></script>  
 </body>
 </html>
