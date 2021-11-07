@@ -18,9 +18,7 @@ tbody{
     height: 100%;
     width: 100%;
 }
-main{
-    font-family: Helvetica,Arial, sans-serif;
-}
+
 article{
     display: flex;
     background-color: #10375C;
