@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,25 +8,17 @@
             <title>Всем Дом</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/adding_object.css" />
-<link rel="icon" href="vsem_dom.ico" type="image/x-icon">
+<link rel="icon" href="vsem_dom2.ico" type="image/x-icon">
 </head>
  
 <body>
-<header>
-  <a  href="index.html">
-   Всем Дом  </a>
-    <nav class = "nav">
-      <a  href="adding_object.html">Зарегистрировать свой обьект</a>
-        <a  href="login.html">Вход</a>
-        <a  href="account_registration.html">Регистрация</a>
-        <a  href="statistics.html">Цены на недвижимость</a>
-    </nav>
-</header>
+<?php
+include("php/header.php");
+?>
 
   <main>
-
-    <form action="" method="post">
-      <div class="form-grup">
+    <form action="index.html" method="post">
+      <div class="registration_form">
         <h2>Заполните все поля для реестрации обьекта</h2>
         <label for="region">Область</label>
         <input list="region-list" name="region" />
@@ -48,7 +43,7 @@
         <label >Описание обьекта</label>
         <textarea name="specification" id="" cols="30" rows="10"></textarea>
         <label >Фото</label>
-        <input type="file" accept="image/jpeg,image/png" id="image">
+        <input type="file" name="file[]" accept="image/jpeg,image/png" id="image" multiple>
         <button type="submit">Отправить данные</button>
 
       </div>

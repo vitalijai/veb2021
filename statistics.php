@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,16 +12,9 @@
 </head>
  
 <body>
-<header>
-  <a  href="index.html">
-    Всем дом </a>
-    <nav class = "nav">
-      <a  href="adding_object.html">Зарегистрировать свой обьект</a>
-        <a  href="login.html">Вход</a>
-        <a  href="account_registration.html">Регистрация</a>
-        <a  href="statistics.html">Цены на недвижимость</a>
-    </nav>
-</header>
+<?php
+include("php/header.php");
+?>
 
   <main>
     <article>

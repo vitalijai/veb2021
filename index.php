@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,48 +8,41 @@
             <title>Всем Дом</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/home_page.css">
-<link rel="icon" href="vsem_dom.ico" type="image/x-icon">
+<link rel="icon" href="vsem_dom2.ico" type="image/x-icon">
 </head>
  
 <body>
-<header>
-  <a  href="index.html">
-     Всем дом </a>
-    <nav class = "nav">
-        <a  href="adding_object.html">Зарегистрировать свой обьект</a>
-        <a  href="login.html">Вход</a>
-        <a  href="account_registration.html">Регистрация</a>
-        <a  href="statistics.html">Цены на недвижимость</a>
-    </nav>
-</header>
+<?php
+include("php/header.php");
+?>
 
   <main>
     <div class ="search_box">
       <h1 id = "head_search">Что вам нужно?</h1>
-      <form class="c" id="search" action="apartment_selection.html"> 
+      <form id="search" action="apartment_selection/"> 
         <h3>Город</h3>
         <input list="city-list" name="city">
         <datalist id="city-list">
           <option value=""></option>
         </datalist>
-        <section></section>
         <h3>Количество комнат</h3>
         <input list="number" name="number_of_rooms">
         <datalist id="number">
           <option value=""></option>
         </datalist>
-        <h3>Минимальная цена поиска</h3>
+        <h3>Бюджет</h3>
         <input type="text" name="price">
+        
       </form>
-    <button form="search" type="submit">Поиск</button>
+      <button form="search" type="submit">Поиск</button>
     
     </div>
   </main>
 
-  <footer>
-      © 2021 Всем Дом
-    <a class="nav_linq" href="https://t.me/Z_L_O_J">Обратная связь</a>
-  </footer>
+  <?php
+  include("footer.html");
+  ?>
+  
 	<script src="js/resize.js"></script>
 </body>
 </html>

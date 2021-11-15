@@ -1,9 +1,8 @@
 var button = document.querySelectorAll('button');
 var input =document.querySelectorAll('input');
 
-button[1].addEventListener('click', function(){
-document.cookie = "login="+input[0].value;
-document.cookie = "password="+input[1].value;
+button[1].addEventListener('click', clear);
 
-alert(document.cookie);
-});
+function clear(){
+    alert(document.cookie);
+}
