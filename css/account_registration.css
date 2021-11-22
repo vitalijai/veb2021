@@ -26,6 +26,7 @@ main
   }
   input{
       width: 35%;
+      min-width: 200px;
       margin-bottom: 10px;
   }
   input::placeholder

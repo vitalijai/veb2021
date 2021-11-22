@@ -11,8 +11,6 @@ table{
     border-collapse: separate;
     text-indent: initial;
     border-spacing: 2px;
-    margin: auto;
-
 }
 tbody{
     height: 100%;
@@ -29,3 +27,39 @@ article{
 h3{
     color: #fff;
 }
+@media (max-width: 1920px)
+  {
+    thead{
+        font-size: 16px;
+    }
+    header > a{
+        font-size: 30px;
+    }
+    nav > a, footer > a{
+        font-size: 19px;
+    }
+  }
+  @media (max-width: 850px)
+  {
+    thead{
+        font-size: 10px;
+    }
+  }
+  @media (max-width: 600px)
+  {
+    thead{
+        font-size: 8px;
+    }
+    header > a{
+        font-size: 20px;
+    }
+    nav > a, footer > a,footer{
+        font-size: 12px;
+    }
+  }
+  @media (max-width: 500px)
+  {
+    thead{
+        font-size: 4px;
+    }
+  }

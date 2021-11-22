@@ -1,14 +1,16 @@
 <?php
 function f(){
+    echo '<a  href="/adding_object.php">Зарегистрировать свой обьект</a>';
     echo '<a class="user">'.$_SESSION['user'].'</a>';
     echo '<a href="/php/log_of.php">Выйти</a>';
+    
 }
 ?>
 <header>
   <a  href="/">
      Всем дом </a>
     <nav>
-        <a  href="/adding_object.php">Зарегистрировать свой обьект</a>
+       
         <a  href="/statistics.php">Цены на недвижимость</a>
        
         <?php

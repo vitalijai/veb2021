@@ -23,6 +23,14 @@ include("php/header.php");
         <h3>Город</h3>
         <input list="city-list" name="city">
         <datalist id="city-list">
+          <?php
+          require_once('php/connect_db.php');
+          $obj = mysqli_query($conect, "SELECT DISTINCT city FROM `object`");
+          while($r = mysqli_fetch_assoc($obj))
+          {
+            echo '<option value="'.$r['city'].'"></option>';
+          }
+          ?>
           <option value=""></option>
         </datalist>
         <h3>Количество комнат</h3>

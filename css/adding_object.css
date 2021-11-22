@@ -12,7 +12,7 @@ main
      font-family: Helvetica,Arial, sans-serif;
      padding: 50px 0;
   }
- .form-grup{
+ .registration_form{
      width: 45%;
      height: 85%;
      background: #10375C;
@@ -22,7 +22,6 @@ main
      border-radius: 5px;
      padding-left: 20px;
      margin-left: 100px;
-
   }
   input{
       width: 35%;

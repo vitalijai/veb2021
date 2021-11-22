@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -17,7 +18,7 @@ include("../php/header.php");
     <div class="search_parameters">
       <h2>Параметри поиска</h2> <br>
      <strong>Месторасполажение:</strong><br>
-     <strong>Количество конат:</strong><br>
+     <strong>Количество комнат:</strong><br>
     <strong>Цена:</strong><br>
       <a class="button" href="../index.php">Назад</a>
     </div>
@@ -66,5 +67,6 @@ include("../php/header.php");
   <?php
   include("../footer.html");
   ?>
+  <script src="/js/galereia.js"></script>
 </body>
 </html>

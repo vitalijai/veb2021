@@ -2,11 +2,16 @@ header, footer{
     background: #10375C;
     display: flex;
     width: 100%;
-    
     min-height: 100px;
+}
+*{ 
+  box-sizing: border-box;
 }
 body{
   font-family: Helvetica, Arial, sans-serif;
+}
+.user:hover{
+  color: #fff;
 }
 header > a{
   font-size: 30px;
@@ -17,12 +22,12 @@ header
 {
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+ 
   height: 12%;
 }
-
 nav{
-  margin: 0 90 0 0px;
+  margin: 0 90px 0 0px;
+  display: flex;
 }
 nav > a, footer > a{
  
