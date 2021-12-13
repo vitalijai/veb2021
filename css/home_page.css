@@ -1,0 +1,94 @@
+
+ main
+  { 
+     margin: 0;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     height: 100%;
+     min-height: 81.4vh;
+     background-image: url(/image/residence-gf6e97047e_1920.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     justify-content: center;
+     font-family: Helvetica,Arial, sans-serif;
+  }
+  .search_box
+  {
+   padding: 15px;
+    border-radius: 8px;
+    background-color: #10375C;
+    margin: 10px;
+}
+
+  #head_search{
+    color: #FFFFFF;
+    font-family: Helvetica,Arial, sans-serif;
+    height: 30px;
+  }
+  h3{
+    color: #ffff;
+    font-size: 19px;
+  }
+  form>input{
+    width: 200px;
+    height: 50px;
+    color: #10375C;
+    border-radius: 5px;
+  }
+  form>div{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  div>input
+  {
+    width: 45%;
+    height: 100%;
+    color: #10375C;
+    border-radius: 5px
+  }
+  button{
+    background-color: #FF5722;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  form{
+    display: grid;
+   
+    grid-template-rows: 1fr 1fr;
+    grid-area: h1;
+    grid-column-gap: 20px;
+  }
+@media (min-height: 0px)
+  {
+    form{
+      grid-auto-flow: none;
+    }
+    button{
+      width: 100px;
+      height: 35px;
+     margin: 5px 45px;
+    }
+  }
+  @media (min-height: 480px)
+  {
+    form{
+      grid-auto-flow: column;
+    }
+    button{
+      width: 150px;
+      height: 55px;
+      margin-left: 73%;
+    }
+  }
